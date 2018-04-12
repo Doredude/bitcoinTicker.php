@@ -3,6 +3,7 @@
 function coindeskBPI(){
 	$data = json_decode(getResource('http://api.coindesk.com/v1/bpi/currentprice.json'),'TRUE');
 	return $data['bpi']['USD']['rate'];
+	include_once 'path/to/bitcoinTicker.php';
 }
 
 function btcChina(){
